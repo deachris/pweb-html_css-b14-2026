@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-back {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #ffffff; 
+  color: #000000;          
+  padding: 20px;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.btn-back {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0078e0; 
+  color: #ffffff;        
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-back:hover {
+  background-color: #005bb5;
+  transform: translateY(-1px);
+}
+
+.leftbar {
+  flex: 1;
+  text-align: center;
+}
+
+.profpic {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  border: 6px solid #ffe70f; /* Aksen Kuning */
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.profpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.leftbar h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.leftbar h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.links-social p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.links-social a {
+  color: #000000;
+  text-decoration: none;
+  font-style: italic;
+  transition: color 0.2s ease;
+}
+
+.links-social a:hover {
+  color: #ffe70f;
+  text-decoration: underline;
+}
+
+.rightbar {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  background-color: #0078e0; /* Biru Utas */
+  color: #ffffff;            /* Teks Putih */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.box td {
+  vertical-align: top;
+  padding-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.box td.label {
+  width: 30%;
+}
+
+.box td.titik-dua {
+  width: 5%;
+}
+
+.box p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.experience {
+  max-width: 900px;
+  margin: 25px auto 0 auto; /* 30px memberi jarak dari box atasnya */
+  background-color: #0078e0;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Grid Layout 3 Kolom Sejajar */
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Memastikan tinggi ketiga box selalu sama */
+  gap: 15px;            /* Jarak antar 3 box */
+}
+
+/* Masing-Masing Box dari 3 Experience */
+.exp1 {
+  flex: 1;                     /* Membagi 3 box rata lebar */
+  background-color: #ffffff;   /* Latar putih agar kontras di atas biru */
+  color: #000000;              /* Teks hitam */
+  border-radius: 8px;
+  border: 3px solid #ffe70f;    /* Bingkai aksen kuning */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.exp1:hover {
+  transform: translateY(-5px); /* Efek terangkat saat di-hover */
+}
+
+/* Isi Teks di Dalam Box */
+.timeline-item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.timeline-item .year {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #0078e0;
+  background-color: #ffe70f;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.timeline-item h4 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.timeline-item p a {
+  color: #0078e0;
+  text-decoration: underline;
+}
+
+/* Responsive Support untuk Layar HP */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column; /* Mengubah susunan 3 box menjadi vertikal di HP */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .leftbar, 
+  .rightbar {
+    width: 100%;
+  }
+
+  .profpic {
+    max-width: 180px;
+  }
+
+  .more {
+    flex-direction: column;
+  }
+
+  .gallery {
+    height: 140px;
+  }
+}
