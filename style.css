@@ -15,6 +15,92 @@ body {
   padding: 20px;
 }
 
+.nav-wrapper {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #0078e0;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  font-size: 15px;
+  color: rgb(250, 250, 250);
+  margin-right: auto;
+  gap: 50px;
+  transition: 0.5s ease;
+}
+.nav-links a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ffe70f;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.landing-page-box {
+  background-color: transparent;
+  color: #000000;          
+  padding: 5px;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.profile-text {
+  flex: 1;
+  font-size: 15px;
+  padding: 100px 100px;
+  color: #000000;
+}
+
+.profile-text h1 {
+  margin-bottom: 10px;
+}
+
+.profile-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.social-media-box {
+  position: fixed;
+  top: 80%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.social-media {
+  position: sticky;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-media a:hover {
+  color: #ffe70f;
+}
+
+/* CREATIVE CV */
+
 .page {
   display: flex;
   flex-direction: row;
