@@ -49,7 +49,7 @@ body {
   aspect-ratio: 1 / 1;
   margin: 0 auto 15px auto;
   border-radius: 50%;
-  border: 6px solid #ffe70f; /* Aksen Kuning */
+  border: 6px solid #ffe70f; 
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -100,8 +100,8 @@ body {
 }
 
 .box {
-  background-color: #0078e0; /* Biru Utas */
-  color: #ffffff;            /* Teks Putih */
+  background-color: #0078e0; 
+  color: #ffffff;          
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -144,7 +144,7 @@ body {
 
 .experience {
   max-width: 900px;
-  margin: 25px auto 0 auto; /* 30px memberi jarak dari box atasnya */
+  margin: 25px auto 0 auto; 
   background-color: #0078e0;
   padding: 15px;
   border-radius: 12px;
@@ -158,31 +158,29 @@ body {
   color: #ffffff;
 }
 
-/* Grid Layout 3 Kolom Sejajar */
 .gallery {
   display: flex;
   justify-content: center;
-  align-items: stretch; /* Memastikan tinggi ketiga box selalu sama */
-  gap: 15px;            /* Jarak antar 3 box */
+  align-items: stretch; 
+  gap: 15px;           
 }
 
-/* Masing-Masing Box dari 3 Experience */
 .exp1 {
-  flex: 1;                     /* Membagi 3 box rata lebar */
-  background-color: #ffffff;   /* Latar putih agar kontras di atas biru */
-  color: #000000;              /* Teks hitam */
+  flex: 1;                    
+  background-color: #ffffff;  
+  color: #000000;             
   border-radius: 8px;
-  border: 3px solid #ffe70f;    /* Bingkai aksen kuning */
+  border: 3px solid #ffe70f;   
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
 }
 
 .exp1:hover {
-  transform: translateY(-5px); /* Efek terangkat saat di-hover */
+  transform: translateY(-5px); 
 }
 
-/* Isi Teks di Dalam Box */
+
 .timeline-item {
   padding: 15px;
   display: flex;
@@ -222,37 +220,17 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Support untuk Layar HP */
+/* bagian ngatur responsive */
 @media (max-width: 768px) {
   .gallery {
-    flex-direction: column; /* Mengubah susunan 3 box menjadi vertikal di HP */
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .box {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
-
-  .leftbar, 
-  .rightbar {
+  .experience {
+    margin: 20px 10px 0 10px;
+    padding: 15px;
+  }
+  .exp1-item {
     width: 100%;
-  }
-
-  .profpic {
-    max-width: 180px;
-  }
-
-  .more {
-    flex-direction: column;
-  }
-
-  .gallery {
-    height: 140px;
   }
 }
