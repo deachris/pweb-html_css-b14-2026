@@ -99,6 +99,37 @@ nav a:hover {
   color: #ffe70f;
 }
 
+/* PHOTO GALLERY */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.photo-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 20px);
+  align-items: center;
+}
+
+.photo-item:hover {
+  border: 1px solid #777;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-item .desc {
+  padding: 15px;
+  text-align: center;
+}
+
 /* CREATIVE CV */
 
 .page {
@@ -318,5 +349,8 @@ nav a:hover {
   }
   .exp1-item {
     width: 100%;
+  }
+  .photo-item {
+    width: calc(50% - 20px);
   }
 }
