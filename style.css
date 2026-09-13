@@ -16,6 +16,12 @@ body {
 }
 
 /* LANDING-PAGE */
+.landing-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .nav-wrapper {
   padding: 20px;
   margin-bottom: 10px;
@@ -30,16 +36,17 @@ body {
 nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-links {
   display: flex;
   font-size: 15px;
   color: rgb(250, 250, 250);
-  margin-right: auto;
-  gap: 50px;
+  gap: 75px;
   transition: 0.5s ease;
 }
+
 .nav-links a {
   color: #ffffff;
 }
@@ -55,8 +62,8 @@ nav a:hover {
 }
 
 #image img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
@@ -70,7 +77,8 @@ nav a:hover {
   color: #ffffff;          
   padding: 5px;
   border-radius: 40px;
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
+  margin: 10px;
 }
 
 .landing-page-box:hover {
@@ -85,6 +93,10 @@ nav a:hover {
 }
 
 .profile-text h1 {
+  margin-bottom: 10px;
+}
+
+.profile-text h2 {
   margin-bottom: 10px;
 }
 
@@ -103,12 +115,21 @@ nav a:hover {
 }
 
 .stats-item {
-  background-color: #ffe70f;
+  background-color: #ffffff;
+  border: 3px solid #ffe70f;
   padding: 20px 30px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   min-width: 150px;
+  transition: 0.3s ease;
+}
+
+.stats-item:hover {
+  border: 1px solid #777;
+  background-color: #ffe70f;
+  box-shadow: 0 8px 20px rgba(19, 26, 166, 0.2); 
+  transform: translateY(-5px);
 }
 
 .stats-item h3 {
@@ -201,10 +222,12 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.3s ease;  
 }
 
 input[type=submit]:hover {
   background-color: #0078e0;
+
 }
 
 /* CREATIVE CV */
