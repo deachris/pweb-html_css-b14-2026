@@ -568,6 +568,12 @@ input[type=submit]:hover {
 
 .skill-card,
 .achieve-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 3px solid #ffe70f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
   transition: transform 0.2s ease;
 }
 
@@ -580,7 +586,6 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 12px;
 }
 
@@ -594,17 +599,29 @@ input[type=submit]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .skill-card:hover .skill-icon {
-  background-color: #ffffff;
   transform: scale(1.1);
 }
 
 .skill-card h4 {
   font-size: 1rem;
-  color: #ffffff;
+  color: #000000;
+}
+
+.achieve-card h4 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.achieve-card p {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.4;
 }
 
 @media (max-width: 992px) {
